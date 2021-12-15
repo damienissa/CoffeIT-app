@@ -14,6 +14,10 @@
 		96B22E442769E70E00090F6E /* CoffeIT_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B22E432769E70E00090F6E /* CoffeIT_appTests.swift */; };
 		96B22E4E2769E70E00090F6E /* CoffeIT_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B22E4D2769E70E00090F6E /* CoffeIT_appUITests.swift */; };
 		96B22E502769E70E00090F6E /* CoffeIT_appUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B22E4F2769E70E00090F6E /* CoffeIT_appUITestsLaunchTests.swift */; };
+		96B22E60276A197A00090F6E /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B22E5F276A197A00090F6E /* Networking.swift */; };
+		96B22E62276A19B600090F6E /* DependenciesInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B22E61276A19B600090F6E /* DependenciesInjection.swift */; };
+		96B22E64276A1BF600090F6E /* DITestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B22E63276A1BF600090F6E /* DITestCase.swift */; };
+		96B22E66276A2AAA00090F6E /* NetworkingTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B22E65276A2AAA00090F6E /* NetworkingTestCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,10 @@
 		96B22E492769E70E00090F6E /* CoffeIT-appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CoffeIT-appUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		96B22E4D2769E70E00090F6E /* CoffeIT_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeIT_appUITests.swift; sourceTree = "<group>"; };
 		96B22E4F2769E70E00090F6E /* CoffeIT_appUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeIT_appUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		96B22E5F276A197A00090F6E /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		96B22E61276A19B600090F6E /* DependenciesInjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependenciesInjection.swift; sourceTree = "<group>"; };
+		96B22E63276A1BF600090F6E /* DITestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DITestCase.swift; sourceTree = "<group>"; };
+		96B22E65276A2AAA00090F6E /* NetworkingTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingTestCase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +102,9 @@
 		96B22E312769E70C00090F6E /* CoffeIT-app */ = {
 			isa = PBXGroup;
 			children = (
+				96B22E5E2769EA2A00090F6E /* Features */,
+				96B22E5D2769EA2100090F6E /* Services */,
+				96B22E5C2769EA1700090F6E /* Common */,
 				96B22E322769E70C00090F6E /* CoffeIT_appApp.swift */,
 				96B22E342769E70C00090F6E /* ContentView.swift */,
 				96B22E362769E70D00090F6E /* Assets.xcassets */,
@@ -114,6 +125,8 @@
 			isa = PBXGroup;
 			children = (
 				96B22E432769E70E00090F6E /* CoffeIT_appTests.swift */,
+				96B22E63276A1BF600090F6E /* DITestCase.swift */,
+				96B22E65276A2AAA00090F6E /* NetworkingTestCase.swift */,
 			);
 			path = "CoffeIT-appTests";
 			sourceTree = "<group>";
@@ -125,6 +138,29 @@
 				96B22E4F2769E70E00090F6E /* CoffeIT_appUITestsLaunchTests.swift */,
 			);
 			path = "CoffeIT-appUITests";
+			sourceTree = "<group>";
+		};
+		96B22E5C2769EA1700090F6E /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		96B22E5D2769EA2100090F6E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				96B22E5F276A197A00090F6E /* Networking.swift */,
+				96B22E61276A19B600090F6E /* DependenciesInjection.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		96B22E5E2769EA2A00090F6E /* Features */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Features;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +293,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96B22E62276A19B600090F6E /* DependenciesInjection.swift in Sources */,
+				96B22E60276A197A00090F6E /* Networking.swift in Sources */,
 				96B22E352769E70C00090F6E /* ContentView.swift in Sources */,
 				96B22E332769E70C00090F6E /* CoffeIT_appApp.swift in Sources */,
 			);
@@ -266,7 +304,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96B22E64276A1BF600090F6E /* DITestCase.swift in Sources */,
 				96B22E442769E70E00090F6E /* CoffeIT_appTests.swift in Sources */,
+				96B22E66276A2AAA00090F6E /* NetworkingTestCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
