@@ -19,9 +19,9 @@ final class APIConstants {
     }
 }
 
-final class Networking {
+final class Networking: INetworking {
     
-    func loadCoffeeMachineSetup() async throws -> String {
+    func loadCoffeeMachineSetup() async throws -> Data {
         let (data, response) = try await URLSession.shared.data(from: URL(string: APIConstants.getCoffeePath(id: APIConstants.defaultMachine))!)
         
         switch ((response as? HTTPURLResponse)?.statusCode ?? 400) {
@@ -31,6 +31,6 @@ final class Networking {
             break
         }
         
-        return String(data: data, encoding: .utf8)
+        return data
     }
 }

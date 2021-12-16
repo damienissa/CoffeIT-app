@@ -18,6 +18,15 @@
 		96B22E62276A19B600090F6E /* DependenciesInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B22E61276A19B600090F6E /* DependenciesInjection.swift */; };
 		96B22E64276A1BF600090F6E /* DITestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B22E63276A1BF600090F6E /* DITestCase.swift */; };
 		96B22E66276A2AAA00090F6E /* NetworkingTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B22E65276A2AAA00090F6E /* NetworkingTestCase.swift */; };
+		ED1CD78F276AC93E00891BDC /* RemoteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1CD78E276AC93E00891BDC /* RemoteRepository.swift */; };
+		ED1CD791276ACC2D00891BDC /* CoffeeMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1CD790276ACC2D00891BDC /* CoffeeMachine.swift */; };
+		ED1CD793276ACE2100891BDC /* DataSourceTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1CD792276ACE2100891BDC /* DataSourceTestCase.swift */; };
+		ED1CD795276ACE6B00891BDC /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1CD794276ACE6B00891BDC /* Resources.swift */; };
+		ED1CD798276ACFFB00891BDC /* IRemoteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1CD797276ACFFB00891BDC /* IRemoteRepository.swift */; };
+		ED1CD79A276AD02200891BDC /* INetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1CD799276AD02200891BDC /* INetworking.swift */; };
+		ED1CD79D276AD0A600891BDC /* Usecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1CD79C276AD0A600891BDC /* Usecase.swift */; };
+		ED1CD7A0276AD47F00891BDC /* LoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1CD79F276AD47F00891BDC /* LoaderView.swift */; };
+		ED1CD7A3276ADD1200891BDC /* View+Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1CD7A2276ADD1200891BDC /* View+Navigation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +61,15 @@
 		96B22E61276A19B600090F6E /* DependenciesInjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependenciesInjection.swift; sourceTree = "<group>"; };
 		96B22E63276A1BF600090F6E /* DITestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DITestCase.swift; sourceTree = "<group>"; };
 		96B22E65276A2AAA00090F6E /* NetworkingTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingTestCase.swift; sourceTree = "<group>"; };
+		ED1CD78E276AC93E00891BDC /* RemoteRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteRepository.swift; sourceTree = "<group>"; };
+		ED1CD790276ACC2D00891BDC /* CoffeeMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeMachine.swift; sourceTree = "<group>"; };
+		ED1CD792276ACE2100891BDC /* DataSourceTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSourceTestCase.swift; sourceTree = "<group>"; };
+		ED1CD794276ACE6B00891BDC /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
+		ED1CD797276ACFFB00891BDC /* IRemoteRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IRemoteRepository.swift; sourceTree = "<group>"; };
+		ED1CD799276AD02200891BDC /* INetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = INetworking.swift; sourceTree = "<group>"; };
+		ED1CD79C276AD0A600891BDC /* Usecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usecase.swift; sourceTree = "<group>"; };
+		ED1CD79F276AD47F00891BDC /* LoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderView.swift; sourceTree = "<group>"; };
+		ED1CD7A2276ADD1200891BDC /* View+Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Navigation.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,9 +120,11 @@
 		96B22E312769E70C00090F6E /* CoffeIT-app */ = {
 			isa = PBXGroup;
 			children = (
-				96B22E5E2769EA2A00090F6E /* Features */,
+				ED1CD7A1276ADD0300891BDC /* Helpers */,
+				ED1CD79E276AD45400891BDC /* Presentation */,
+				ED1CD78D276AC90100891BDC /* Data */,
+				ED1CD78B276AC6F900891BDC /* Domain */,
 				96B22E5D2769EA2100090F6E /* Services */,
-				96B22E5C2769EA1700090F6E /* Common */,
 				96B22E322769E70C00090F6E /* CoffeIT_appApp.swift */,
 				96B22E342769E70C00090F6E /* ContentView.swift */,
 				96B22E362769E70D00090F6E /* Assets.xcassets */,
@@ -127,6 +147,8 @@
 				96B22E432769E70E00090F6E /* CoffeIT_appTests.swift */,
 				96B22E63276A1BF600090F6E /* DITestCase.swift */,
 				96B22E65276A2AAA00090F6E /* NetworkingTestCase.swift */,
+				ED1CD792276ACE2100891BDC /* DataSourceTestCase.swift */,
+				ED1CD794276ACE6B00891BDC /* Resources.swift */,
 			);
 			path = "CoffeIT-appTests";
 			sourceTree = "<group>";
@@ -140,13 +162,6 @@
 			path = "CoffeIT-appUITests";
 			sourceTree = "<group>";
 		};
-		96B22E5C2769EA1700090F6E /* Common */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Common;
-			sourceTree = "<group>";
-		};
 		96B22E5D2769EA2100090F6E /* Services */ = {
 			isa = PBXGroup;
 			children = (
@@ -156,11 +171,63 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
-		96B22E5E2769EA2A00090F6E /* Features */ = {
+		ED1CD78B276AC6F900891BDC /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				ED1CD79B276AD09100891BDC /* Usecases */,
+				ED1CD796276ACFE200891BDC /* Repositories */,
+				ED1CD78C276AC70100891BDC /* Models */,
 			);
-			path = Features;
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		ED1CD78C276AC70100891BDC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ED1CD790276ACC2D00891BDC /* CoffeeMachine.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		ED1CD78D276AC90100891BDC /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				ED1CD78E276AC93E00891BDC /* RemoteRepository.swift */,
+				ED1CD799276AD02200891BDC /* INetworking.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		ED1CD796276ACFE200891BDC /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				ED1CD797276ACFFB00891BDC /* IRemoteRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		ED1CD79B276AD09100891BDC /* Usecases */ = {
+			isa = PBXGroup;
+			children = (
+				ED1CD79C276AD0A600891BDC /* Usecase.swift */,
+			);
+			path = Usecases;
+			sourceTree = "<group>";
+		};
+		ED1CD79E276AD45400891BDC /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				ED1CD79F276AD47F00891BDC /* LoaderView.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		ED1CD7A1276ADD0300891BDC /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				ED1CD7A2276ADD1200891BDC /* View+Navigation.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,8 +362,15 @@
 			files = (
 				96B22E62276A19B600090F6E /* DependenciesInjection.swift in Sources */,
 				96B22E60276A197A00090F6E /* Networking.swift in Sources */,
+				ED1CD798276ACFFB00891BDC /* IRemoteRepository.swift in Sources */,
+				ED1CD79D276AD0A600891BDC /* Usecase.swift in Sources */,
 				96B22E352769E70C00090F6E /* ContentView.swift in Sources */,
+				ED1CD78F276AC93E00891BDC /* RemoteRepository.swift in Sources */,
+				ED1CD79A276AD02200891BDC /* INetworking.swift in Sources */,
+				ED1CD7A0276AD47F00891BDC /* LoaderView.swift in Sources */,
 				96B22E332769E70C00090F6E /* CoffeIT_appApp.swift in Sources */,
+				ED1CD791276ACC2D00891BDC /* CoffeeMachine.swift in Sources */,
+				ED1CD7A3276ADD1200891BDC /* View+Navigation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,6 +380,8 @@
 			files = (
 				96B22E64276A1BF600090F6E /* DITestCase.swift in Sources */,
 				96B22E442769E70E00090F6E /* CoffeIT_appTests.swift in Sources */,
+				ED1CD793276ACE2100891BDC /* DataSourceTestCase.swift in Sources */,
+				ED1CD795276ACE6B00891BDC /* Resources.swift in Sources */,
 				96B22E66276A2AAA00090F6E /* NetworkingTestCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

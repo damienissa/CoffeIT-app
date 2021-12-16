@@ -9,17 +9,18 @@ import XCTest
 @testable import CoffeIT_app
 
 class NetworkingTestCase: XCTestCase {
+    
+    func testLoadingData() async throws {
 
-    func testLoadingData() throws {
-        
         let sut = makeSUT()
-        Task {
-            XCTAssertNoThrow(try await sut.loadCoffeeMachineSetup())
-        }
         
+        XCTAssertNoThrow(Task {
+            try await sut.loadCoffeeMachineSetup()
+        })
     }
     
     func makeSUT() -> Networking {
         Networking()
     }
 }
+

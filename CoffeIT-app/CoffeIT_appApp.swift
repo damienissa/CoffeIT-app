@@ -10,13 +10,21 @@ import SwiftUI
 @main
 struct CoffeIT_appApp: App {
     
+    @State var isLoaded = false;
+    
     init() {
         registerDependencies()
     }
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+//            NavigationView {
+            ContentView().onAppear {
+                    Timer.scheduledTimer(withTimeInterval: 3, repeats: false) { _ in
+                        isLoaded = true;
+                    }
+//                }
+            }
         }
     }
     
